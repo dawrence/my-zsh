@@ -56,6 +56,7 @@ gclean () {
 }
 
 # Read Access
+# ==============================================================================
 sk() {
 	cd ~/Projects/SK/Projects/
 }
@@ -72,6 +73,16 @@ nn() {
 # go to mrman
 mrman() {
 	cd ~/Projects/SK/Projects/mr-man-app
+}
+# ==============================================================================
+# Personal things
+
+personal() {
+	cd ~/Projects/Personal
+}
+
+myzsh() {
+	cd ~/Projects/Personal/my-zsh/
 }
 
 #reload zsh

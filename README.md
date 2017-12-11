@@ -6,5 +6,13 @@ Requires this https://github.com/olivierverdier/zsh-git-prompt
 
 
 # How to run.
-just copy this into your .zshrc file.
+create Symlink
+`ln -s ~/Projects/Personal/my-zsh/.zshrc ~/.zshrc`
+
+reload zsh
+`. ~/.zshrc`
+
+# Docs
+http://zsh.sourceforge.net/Intro/intro_4.html
+
 
