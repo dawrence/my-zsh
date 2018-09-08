@@ -25,7 +25,7 @@ gs() {
 ga() {
 	git add --all
 }
- 
+
 # commit
 gm() {
 	git commit -m $1
@@ -50,7 +50,7 @@ gp(){
 # Vendor
 # ==============================================================================
 # get the name of the branch we are on
-_git_repo_name() { 
+_git_repo_name() {
     gittopdir=$(git rev-parse --git-dir 2> /dev/null)
     if [[ "foo$gittopdir" == "foo.git" ]]; then
         echo `basename $(pwd)`
@@ -58,10 +58,10 @@ _git_repo_name() {
         echo `dirname $gittopdir | xargs basename`
     fi
 }
-_git_branch_name() {    
+_git_branch_name() {
     git branch 2>/dev/null | awk '/^\*/ { print $2 }'
-}    
- _git_is_dirty() { 
+}
+ _git_is_dirty() {
    git diff --quiet 2> /dev/null || echo '*'
 }
 
@@ -73,7 +73,7 @@ gmaster() {
 	git pull origin master
 }
 
-# Create a new branch, and sync with master. Stash any changes and 
+# Create a new branch, and sync with master. Stash any changes and
 # clean
 gnew() {
 	git checkout master
@@ -110,6 +110,10 @@ branches() {
 # ==============================================================================
 sk() {
 	cd ~/Projects/SK/Projects/
+}
+
+shopware() {
+  cd ~/Projects/Admios/shop-ware
 }
 
 # go to mrskin
