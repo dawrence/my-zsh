@@ -15,4 +15,5 @@ reload zsh
 # Docs
 http://zsh.sourceforge.net/Intro/intro_4.html
 
-
+# Manual
+http://zsh.sourceforge.net/Doc/Release/zsh_toc.html#SEC_Contents
